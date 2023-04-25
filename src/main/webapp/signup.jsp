@@ -7,8 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="signup" method="post">
-		<table>
+	<form action="signup" method="post" >
+	<h1 style="text-align: center">===============SignUp Page==================</h1> 
+	
+	 <br> <br> <br>
+		    <table width="50%" bgcolor="grey" length="600px" style="margin-left: auto;margin-right: auto;">
 			<tr>
 				<td>Name :</td>
 				<td><input type="text" name="name"
@@ -44,9 +47,11 @@
 				</select></td>
 			</tr>
 			<tr>
-				<td><input type="submit" value="Save"></td>
+				<td colspan="2" style="text-align: center;"><input type="submit" value="Save" ></td>
 			</tr>
 		</table>
+		
+
 	</form>
 </body>
 </html>

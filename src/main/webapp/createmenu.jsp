@@ -6,9 +6,11 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
+<body style="background-color: infobackground;">
 	<form action="savemenu" method="post">
-		<table>
+	 <legend align="center">
+	 <h1 style="text-align: center;color: green;">**********Enter Menu Details**********</h1>
+		<table  bgcolor="grey" style="margin-left: auto;margin-right: auto;margin-top: 100px;width: 100mm;color: ">
 			<tr>
 				<td>Name :</td>
 				<td><input type="text" name="name" placeholder="Enter the name"></td>
@@ -29,9 +31,10 @@
 					placeholder="Enter the offer"></td>
 			</tr>
 			<tr>
-				<td><input type="submit" value="Save"></td>
+				<td colspan="2" style="text-align: center;"><input type="submit" value="Save"></td>
 			</tr>
 		</table>
+		</legend>
 	</form>
 </body>
 </html>

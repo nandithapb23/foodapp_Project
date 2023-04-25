@@ -31,9 +31,10 @@ public class OrderListController extends HttpServlet {
 		FoodOrder order=dao.getFoodOrderByEmail(email);
 		System.out.println(order);
 		List<Items>list=order.getItems();
-		
-		
-		req.setAttribute("list", list);
+		for(Items item:list){
+			System.out.println(item);
+		}
+		req.setAttribute("menus", list);
 		RequestDispatcher dispatcher=req.getRequestDispatcher("orders.jsp");
 		dispatcher.forward(req, resp);
 		

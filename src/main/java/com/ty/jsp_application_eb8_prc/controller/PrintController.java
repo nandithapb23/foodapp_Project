@@ -41,6 +41,8 @@ public class PrintController extends HttpServlet {
 			RequestDispatcher dispatcher = req.getRequestDispatcher("end.jsp");
 			dispatcher.forward(req, resp);
 		}
+		//ConfirmOrderController.list.clear();
+		
 	}
 
 }

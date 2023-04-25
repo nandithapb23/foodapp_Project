@@ -14,8 +14,9 @@
 	FoodOrder foodOrder = (FoodOrder) request.getAttribute("foodorder");
 	long payable_amount = 0;
 	%>
-	<h1><%=message%></h1>
-	<table>
+	<h1 style="text-align: center;"><%=message%></h1>
+	<table style="background-color: infobackground;">
+	<legend>
 		<tr>
 			<td>Name :</td>
 			<td><%=foodOrder.getName()%></td>
@@ -32,6 +33,7 @@
 			<td>Phone :</td>
 			<td><%=foodOrder.getPhone()%></td>
 		</tr>
+		
 	</table>
 	<table border="2px solid">
 		<tr>
@@ -59,6 +61,7 @@
 		<%
 		}
 		%>
+		
 	</table>
 	<h3>
 		Amount to be paid :

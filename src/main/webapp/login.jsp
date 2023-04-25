@@ -6,11 +6,13 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
+<body >
 	<form action="login" method="post">
-		<table>
+	<h1 style="text-align: center;color: green">**********Login Into Your Account*********</h1> 
+	 <br> <br> <br>
+		    <table width="40%"  bgcolor="grey"  length="600px" style="margin-left: auto;margin-right: auto;">
 			<tr>
-				<td>Email :</td>
+				<td >Email :</td>
 				<td><input type="email" name="email"
 					placeholder="Enter your email"></td>
 			</tr>
@@ -20,7 +22,7 @@
 					placeholder="Enter your password"></td>
 			</tr>
 			<tr>
-				<td><input type="submit" value="Login"></td>
+				<td colspan="2" style="text-align: center;"><input type="submit" value="Login" ></td>
 			</tr>
 		</table>
 	</form>

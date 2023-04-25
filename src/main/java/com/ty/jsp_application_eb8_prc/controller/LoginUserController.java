@@ -25,6 +25,7 @@ public class LoginUserController extends HttpServlet {
 		String password = req.getParameter("password");
 
 		UserDao dao = new UserDao();
+		try{
 		User user = dao.getUserByEmail(email);
 
 		MenuDao menuDao = new MenuDao();
@@ -48,10 +49,16 @@ public class LoginUserController extends HttpServlet {
 			RequestDispatcher dispatcher = req.getRequestDispatcher("staff.jsp");
 			dispatcher.forward(req, resp);
 		} else {
-			req.setAttribute("message", "Invalid Password");
+			req.setAttribute("message", "Enter valid Password");
+			RequestDispatcher dispatcher = req.getRequestDispatcher("success.jsp");
+			dispatcher.forward(req, resp);
+		}
+		}catch (Exception e) {
+			req.setAttribute("message", "Please Enter Valid Email");
 			RequestDispatcher dispatcher = req.getRequestDispatcher("success.jsp");
 			dispatcher.forward(req, resp);
 		}
 	}
+		
 
 }

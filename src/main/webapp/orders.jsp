@@ -14,11 +14,7 @@
 
    
     
-    
-    
-    
-    
-    
+   
     	<%
 	List<Items> menus = (List) request.getAttribute("menus");
     	if(menus!=null){
